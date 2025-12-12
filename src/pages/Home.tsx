@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../components/Card';
-import { Battery, Wifi, Mic, Play, MoreVertical } from 'lucide-react';
+import { Battery, Wifi, Mic, Play, MoreVertical, FileText, Languages } from 'lucide-react';
 
 interface HomeProps {
     onPlay: () => void;
@@ -49,6 +49,26 @@ export const Home: React.FC<HomeProps> = ({ onPlay, onOpenSummary }) => {
             </Card>
 
 
+
+            {/* AI Actions - Hidden by user request but kept for reference
+            <div className="relative z-10">
+                <h3 className="text-sm font-semibold text-white/50 mb-3 tracking-wider uppercase text-[10px]">AI Actions</h3>
+                <div className="grid grid-cols-2 gap-4">
+                    <Card variant="glass" interactive onClick={onOpenSummary} className="flex flex-col items-center justify-center py-8 gap-3 group backdrop-blur-md relative z-10 hover:bg-white/10 transition-colors">
+                        <div className="h-10 w-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-200">
+                            <FileText size={20} />
+                        </div>
+                        <span className="text-xs font-medium text-white">Summarize</span>
+                    </Card>
+                    <Card variant="glass" interactive onClick={onOpenSummary} className="flex flex-col items-center justify-center py-8 gap-3 group backdrop-blur-md relative z-10 hover:bg-white/10 transition-colors">
+                        <div className="h-10 w-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform duration-200">
+                            <Languages size={20} />
+                        </div>
+                        <span className="text-xs font-medium text-white">Translate</span>
+                    </Card>
+                </div>
+            </div>
+            */}
 
             {/* Quick Actions */}
             <h3 className="text-sm font-semibold text-white/50 mb-3 tracking-wider uppercase text-[10px] mt-6">Quick Actions</h3>
